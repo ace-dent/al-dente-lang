@@ -1,0 +1,10 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# macOS string files are UTF-16, so we need some magic for nice diffs.
+# Source: https://blog.xk72.com/post/31456986659/diff-strings-files-in-git
+*.strings diff=localizablestrings
+
+# Declare files that should be treated as text with explicit line endings
+# https://en.wikipedia.org/wiki/Newline#Representation
+*.txt text eol=lf
